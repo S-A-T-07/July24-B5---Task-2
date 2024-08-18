@@ -329,209 +329,240 @@ footer {
 /* Media Queries */
 
 /* NAVBAR */
-/* Media query for large tablets and small laptops */
-@media(max-width: 1024px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+        /* Media query for large tablets and small laptops */
+        @media(max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
-    header {
-        padding: 0.1px;
-    }
-}
+            header {
+                padding: 0.1px;
+            }
+        }
 
-/* Media query for tablets */
-@media(max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+        /* Media query for tablets */
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
-    header {
-        padding: 0.1px;
-    }
-}
+            header {
+                padding: 0.1px;
+            }
+        }
 
-/* Media query for mobile devices */
-@media(max-width: 600px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+        /* Media query for mobile devices */
+        @media(max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
-    header {
-        padding: 0.1px;
-    }
-}
+            header {
+                padding: 0.1px;
+            }
+        }
 
-/* Media query for small mobile devices */
-@media(max-width: 480px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0.1px;
-    }
+        /* Media query for small mobile devices */
+        @media(max-width: 480px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0.1px;
+            }
 
-    header {
-        padding: 0.1px;
-    }
-}
+            header {
+                padding: 0.1px;
+            }
+        }
 
-@media (max-width: 1036px) {
-    .navbar-menu {
-        display: none;
-    }
+        @media (max-width: 1036px) {
+            .navbar-menu {
+                display: none;
+            }
 
-    .navbar-toggler {
-        display: flex;
-    }
+            .navbar-toggler {
+                display: flex;
+            }
 
-    /* Show the menu when the checkbox is checked */
-    #navbar-toggle:checked~nav.navbar-menu {
-        display: block;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: linear-gradient(90deg,
-                rgb(85, 0, 255),
-                rgb(71, 227, 255),
-                rgb(255, 191, 0),
-                yellow);
-        width: 100%;
-        padding: 0.10px 0;
-    }
+            /* Show the menu when the checkbox is checked */
+            #navbar-toggle:checked~nav.navbar-menu {
+                display: block;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: linear-gradient(90deg,
+                        rgb(85, 0, 255),
+                        rgb(71, 227, 255),
+                        rgb(255, 191, 0),
+                        yellow);
+                width: 100%;
+                padding: 0.10px 0;
+            }
 
-    .navbar-menu ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
+            .navbar-menu ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
 
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-}
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+        }
 
-/* Media query for screens below 135px */
-@media (max-width: 135px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+        /* Media query for screens below 135px */
+        @media (max-width: 135px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .navbar-title {
-        margin-bottom: 5px;
-    }
+            .navbar-title {
+                margin-bottom: 5px;
+            }
 
-    .navbar-toggler {
-        display: flex;
-        margin-top: 5px;
-    }
-}
+            .navbar-toggler {
+                display: flex;
+                margin-top: 5px;
+            }
+        }
 
 /* LANDING PAGE */
-/* Media query for screens below 1015px */
-@media (max-width: 1015px) {
-    .hero {
-        height: auto;
-        margin-top: 50px;
-    }
+        /* Media query for screens below 1015px */
+        @media (max-width: 1015px) {
+            .hero {
+                height: auto;
+                margin-top: 50px;
+            }
 
-    .hero .container {
-        justify-content: center;
-        text-align: center;
-    }
+            .hero .container {
+                justify-content: center;
+                text-align: center;
+            }
 
-    .hero h2 {
-        font-size: 1.5em;
-    }
+            .hero h2 {
+                font-size: 1.5em;
+            }
 
-    .homeImages {
-        position: relative;
-        width: 100%;
-        height: auto;
-        right: 0;
-        bottom: 0;
-        margin-top: 0px;
-    }
+            .homeImages {
+                position: relative;
+                width: 100%;
+                height: auto;
+                right: 0;
+                bottom: 0;
+                margin-top: 0px;
+            }
 
-    .group1 {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        height: auto;
-    }
+            .group1 {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                height: auto;
+            }
 
-    /* Stack the images */
-    #shape {
-        position: relative;
-    }
+            /* Stack the images */
+            #shape {
+                position: relative;
+            }
 
-    #board {
-        z-index: 1;
-        position: absolute;
-    }
+            #board {
+                z-index: 1;
+                position: absolute;
+            }
 
-    /* Image hover effects still intact */
-    .homeImages:hover #shape {
-        left: 45%;
-    }
+            /* Image hover effects still intact */
+            .homeImages:hover #shape {
+                left: 45%;
+            }
 
-    .homeImages:hover #board {
-        bottom: 5%;
-    }
-}
+            .homeImages:hover #board {
+                bottom: 5%;
+            }
+        }
+/* PLACES */
+
+           /* Media query for screens below 555px */
+        @media (max-width: 555px) {
+            .gallery .grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 columns for smaller screens */
+                gap: 8px;
+                /* Adjust gap for smaller screens */
+            }
+
+            .gallery .grid-item img {
+                width: 100%;
+                /* Maintain 100% width for images */
+                height: auto;
+            }
+
+            .gallery .grid-item p {
+                text-align: center;
+                font-size: 0.9rem;
+                /* Adjust font size to fit the smaller layout */
+                margin-top: 5px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                /* Resize heading for smaller screens */
+                text-align: center;
+            }
+        }
+
 /* Our Team*/
-@media (max-width: 555px) {
-    .team .team-member img {
-        width: 80px;
-        /* Adjusted width */
-        height: 80px;
-        /* Adjusted height */
-    }
+        @media (max-width: 555px) {
+            .team .team-member img {
+                width: 80px;
+                /* Adjusted width */
+                height: 80px;
+                /* Adjusted height */
+            }
 
-    .team .team-member h4 {
-        font-size: 1em;
-        /* Smaller heading */
-    }
+            .team .team-member h4 {
+                font-size: 1em;
+                /* Smaller heading */
+            }
 
-    .team .team-member p {
-        font-size: 0.9em;
-        /* Smaller text */
-    }
+            .team .team-member p {
+                font-size: 0.9em;
+                /* Smaller text */
+            }
 
-    .grid1 {
-        grid-template-columns: repeat(3, 1fr);
-        /* Keep all three images in one row */
-        gap: 10px;
-        /* Adjust gap to keep spacing */
-    }
-}
+            .grid1 {
+                grid-template-columns: repeat(3, 1fr);
+                /* Keep all three images in one row */
+                gap: 10px;
+                /* Adjust gap to keep spacing */
+            }
+        }
 
 /* Contact */
-@media (max-width: 555px) {
-    .iconCollections {
-        grid-template-columns: repeat(6, 45px);
-        /* Ensure six columns fit within the screen */
-        gap: 5px;
-        /* Adjust the gap between icons */
-    }
+        @media (max-width: 555px) {
+            .iconCollections {
+                grid-template-columns: repeat(6, 45px);
+                /* Ensure six columns fit within the screen */
+                gap: 5px;
+                /* Adjust the gap between icons */
+            }
 
-    .icons {
-        width: 40px;
-        /* Smaller icon size */
-        height: 40px;
-        /* Adjust height accordingly */
-        margin: 0px 5px;
-        /* Reduce margin for smaller screens */
-    }
+            .icons {
+                width: 40px;
+                /* Smaller icon size */
+                height: 40px;
+                /* Adjust height accordingly */
+                margin: 0px 5px;
+                /* Reduce margin for smaller screens */
+            }
 
-    .brands {
-        font-size: 1.2rem;
-        /* Reduce font size of icons */
-    }
-}
+            .brands {
+                font-size: 1.2rem;
+                /* Reduce font size of icons */
+            }
+        }
