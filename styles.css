@@ -1,0 +1,487 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg,
+            rgb(85, 0, 255),
+            rgb(71, 227, 255),
+            rgb(255, 191, 0),
+            yellow);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Animation for smooth gradient transition */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 100px;
+}
+
+/* Bebas Neue font import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+header {
+    background: linear-gradient(90deg,
+            rgb(85, 0, 255),
+            rgb(71, 227, 255),
+            rgb(255, 191, 0),
+            yellow);
+    color: #000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Basic container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Navbar menu (hidden by default on small screens) */
+.navbar-menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/* Toggle Button Styles */
+.navbar-toggle-checkbox {
+    display: none;
+    /* Hide the checkbox */
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggler span {
+    background-color: #000;
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    width: 25px;
+}
+
+
+
+header nav {
+    flex: 0 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+
+/* Import the chosen font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Style the h2 tag */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    color: #333;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2::before,
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+}
+
+h2::before {
+    bottom: -10px;
+}
+
+h2::after {
+    top: -10px;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 60px 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg,
+            rgb(85, 0, 255),
+            rgb(71, 227, 255),
+            rgb(255, 191, 0),
+            yellow);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.hero-image {
+    width: 150px;
+    height: auto;
+}
+
+.homeImages {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+.group1 {
+    position: absolute;
+    height: 80%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.homeImages:hover #shape {
+    left: 40%;
+}
+
+.homeImages:hover #board {
+    bottom: 10%;
+}
+
+.handwriting-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #333;
+}
+
+.gallery .grid,
+.team .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery .grid-item img,
+.team .team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team .team-member {
+    text-align: center;
+}
+
+.team .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 10px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+footer {
+    background: linear-gradient(90deg,
+            rgb(85, 0, 255),
+            rgb(71, 227, 255),
+            rgb(255, 191, 0),
+            yellow);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.iconCollections {
+    display: grid;
+    grid-template-columns: repeat(6, 75px);
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 50px;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.brands {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.icons:hover {
+    background-image: linear-gradient(to bottom right,
+            rgb(85, 0, 255),
+            rgb(71, 227, 255),
+            rgb(255, 191, 0),
+            yellow);
+}
+
+.icons:hover .brands {
+    color: white;
+}
+
+/* Media Queries */
+
+/* NAVBAR */
+/* Media query for large tablets and small laptops */
+@media(max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        padding: 0.1px;
+    }
+}
+
+/* Media query for tablets */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        padding: 0.1px;
+    }
+}
+
+/* Media query for mobile devices */
+@media(max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        padding: 0.1px;
+    }
+}
+
+/* Media query for small mobile devices */
+@media(max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.1px;
+    }
+
+    header {
+        padding: 0.1px;
+    }
+}
+
+@media (max-width: 1036px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #navbar-toggle:checked~nav.navbar-menu {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: linear-gradient(90deg,
+                rgb(85, 0, 255),
+                rgb(71, 227, 255),
+                rgb(255, 191, 0),
+                yellow);
+        width: 100%;
+        padding: 0.10px 0;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* Media query for screens below 135px */
+@media (max-width: 135px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-title {
+        margin-bottom: 5px;
+    }
+
+    .navbar-toggler {
+        display: flex;
+        margin-top: 5px;
+    }
+}
+
+/* LANDING PAGE */
+/* Media query for screens below 1015px */
+@media (max-width: 1015px) {
+    .hero {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .hero .container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .homeImages {
+        position: relative;
+        width: 100%;
+        height: auto;
+        right: 0;
+        bottom: 0;
+        margin-top: 0px;
+    }
+
+    .group1 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+    }
+
+    /* Stack the images */
+    #shape {
+        position: relative;
+    }
+
+    #board {
+        z-index: 1;
+        position: absolute;
+    }
+
+    /* Image hover effects still intact */
+    .homeImages:hover #shape {
+        left: 45%;
+    }
+
+    .homeImages:hover #board {
+        bottom: 5%;
+    }
+}
